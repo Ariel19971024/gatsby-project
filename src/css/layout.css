@@ -440,4 +440,7 @@
   width: 80%;
   height: 80%;
 }
+h1,h2,p{
+  margin-left: 20px;
+}
 /* Content --END */

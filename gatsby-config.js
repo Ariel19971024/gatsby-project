@@ -16,11 +16,12 @@ module.exports = {
     {
       resolve: `gatsby-source-mongodb`,
       options: { dbName: `Blogs`, collection: `Day1` },
-      // server: {
-      //   address: process.env.MONGO_CLUSTER_ADDRESS,
-      //   port: 27017
-      // },
+      server: {
+        address: process.env.MONGO_CLUSTER_ADDRESS,
+        port: 27017
+      },
     },
+    "gatsby-plugin-sass",
     "gatsby-transformer-json",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",

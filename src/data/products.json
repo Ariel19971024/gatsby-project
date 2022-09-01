@@ -21,6 +21,11 @@
         "description": "<p>Add more blazingly blazing speed to your wardrobe with this solid purple laundered chino twill hat.</p>",
         "price": "$10.00",
         "image": "/images/david-bailey-cat-hat.jpg"
+      },
+      {
+        "title": "Github",
+        "slug": "github",
+        "description": "<div><strong>專案部署到github以gitpage呈現</strong></div>"
       }
     ]
   }

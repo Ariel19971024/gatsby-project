@@ -22,11 +22,14 @@ function getItem(label, key, icon, children, type) {
 const items = [
   getItem("First Page", "1", <PieChartOutlined />),
   getItem("Contact us", "2", <DesktopOutlined />),
-  getItem("About us", "/about", <ContainerOutlined />),
+  getItem("React", "3", <DesktopOutlined />, [
+    getItem("UseContext用法", "/use-context", <ContainerOutlined />),
+  ]),
   getItem("Products", "sub1", <MailOutlined />, [
     getItem("vintage-purple-tee", "/gql/vintage-purple-tee"),
     getItem("space-socks", "/gql/space-socks"),
     getItem("purple-hat", "/gql/purple-hat"),
+    getItem("github", "/gql/github"),
   ]),
   getItem("Navigation Two", "sub2", <AppstoreOutlined />, [
     getItem("Option 9", "9"),
@@ -59,8 +62,10 @@ export default function Home({ pageContext }) {
       </div>
       <div className="content-area">
         <div className="post-area">
-          <h1>{pageContext.edge.title}</h1>
-          <div dangerouslySetInnerHTML={{ __html: pageContext.edge.description }} />
+          {/* <h1>{pageContext.edge.title}</h1>
+          <div
+            dangerouslySetInnerHTML={{ __html: pageContext.edge.description }}
+          /> */}
         </div>
       </div>
     </div>

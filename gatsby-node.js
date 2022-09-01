@@ -34,6 +34,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
   if (results.error) {
     return
   }
+  console.log(results)
   results.data.allMongodbBlogsDay1.edges[0].node.main.blog1.forEach(edge => {
     console.log(edge.slug)
     createPage({

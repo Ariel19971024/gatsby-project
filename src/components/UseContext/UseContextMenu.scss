@@ -1,0 +1,27 @@
+$title-color:#096dd9;
+.menu-area-for-usecontext{
+    width: 256px;
+    background-color: rgb(236, 231, 231);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.item{
+    height: 30px;
+    color: $title-color;
+    padding: 5px;
+}
+.item:hover{
+    background-color: #9dc9f8;
+    padding: 5px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+button{
+    margin-left: 20px;
+}
+.item-button{
+    margin-left: 28%;
+}
