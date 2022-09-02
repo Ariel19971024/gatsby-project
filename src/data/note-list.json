@@ -1,0 +1,18 @@
+{
+  "main": {
+    "blog1": [
+      {
+        "title": "這是一頁用來測試useContext",
+        "path": "use-context",
+        "description": " React內建提供了一個實作Global資料的方法，稱作ContextAPI。類似vue的provide,inject,可以進行跨層級的溝通。",
+        "point":"1.只能在 React Function 中呼叫 Hook。 class component 是不能用的/2.只在最上層呼叫 。不要在迴圈、條件式或是巢狀的 function 內呼叫 Hook，這樣你才能確保每一次 component render 時 Hook 被呼叫順序都要是一樣的"
+      },
+      {
+        "title": "這是一頁用來測試useEffect",
+        "path": "use-effect",
+        "description": " useEffect這個hook是來讓涵式產生side effect,useEffect會在畫面渲染後，才執行。只在最上層呼叫 。不要在迴圈、條件式或是巢狀的 function 內呼叫 Hook，這樣你才能確保每一次 component render 時 Hook 被呼叫順序都要是一樣的",
+        "point":""
+      }
+    ]
+  }
+}

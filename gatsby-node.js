@@ -1,4 +1,4 @@
-const { routes, graphqlSample } = require("./src/router/routes.js")
+// const { routes, graphqlSample } = require("./src/router/routes.js")
 //to create pages
 //here is not in the module you can't use import otherwise it will console an error.
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
@@ -20,10 +20,9 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
             main {
               blog1 {
                 title
-                slug
+                path
                 description
-                price
-                image
+                point
               }
             }
           }
@@ -36,10 +35,10 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
   }
   console.log(results)
   results.data.allMongodbBlogsDay1.edges[0].node.main.blog1.forEach(edge => {
-    console.log(edge.slug)
+    //為spa的做法
     createPage({
-      path: `/gql/${edge.slug}/`,
-      component: require.resolve("./src/pages/index.js"),
+      path: `/gql/${edge.path}/`,
+      component: require.resolve(`./src/templates/${edge.path}.js`),
       context: {
         edge,
       },

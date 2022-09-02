@@ -15,7 +15,7 @@ module.exports = {
     },
     {
       resolve: `gatsby-source-mongodb`,
-      options: { dbName: `Blogs`, collection: `Day1` },
+      options: { dbName: `Blogs`, collection: [`Day1`,`Menu`] },
       server: {
         address: process.env.MONGO_CLUSTER_ADDRESS,
         port: 27017

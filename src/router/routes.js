@@ -1,16 +1,17 @@
 const routes = [
   {
-    path: "/page-with-context/",
-    component: require.resolve("../templates/page-with-context.js"),
-    context: {
-      title: "We Don't Need No Stinkin GraphQl",
-      content: "<p>This is page content.</p><p>No GraphQL required!</p>",
-    },
-  },
-  {
-    path: "/no-data/",
-    component: require.resolve("../templates/no-data.js"),
-  },
+    "title": "React",
+    "children": [
+      {
+        "title": "useContext",
+        "path": "/gql/use-context"
+      },
+      {
+        "title": "useEffect",
+        "path": "/gql/use-effect"
+      }
+    ]
+  }
 ]
 
 const graphqlSample = [
