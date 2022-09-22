@@ -23,6 +23,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
                 path
                 description
                 point
+                img
               }
             }
           }

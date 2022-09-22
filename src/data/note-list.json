@@ -10,8 +10,13 @@
       {
         "title": "這是一頁用來測試useEffect",
         "path": "use-effect",
-        "description": " useEffect這個hook是來讓涵式產生side effect,useEffect會在畫面渲染後，才執行。只在最上層呼叫 。不要在迴圈、條件式或是巢狀的 function 內呼叫 Hook，這樣你才能確保每一次 component render 時 Hook 被呼叫順序都要是一樣的",
-        "point":""
+        "description": " useEffect這個hook是來讓涵式產生side effect,useEffect會在畫面渲染後，才執行。只在最上層呼叫 。不要在迴圈、條件式或是巢狀的 function 內呼叫 Hook，這樣你才能確保每一次 component render 時 Hook 被呼叫順序都要是一樣的"
+      },
+      {
+        "title": "Redux",
+        "path": "use-redux",
+        "description": "React本身提供的狀態管理API。但是我們也在後續的文章中講到了Context API本身並不是設計拿來做大型專案的狀態管理，因而存在麻煩的效能問題。於是Global State的概念就誕生了。React是一個<strong>全局state和setState</strong>工具|參考來源：<a href='https://ithelp.ithome.com.tw/articles/10252663'>https://ithelp.ithome.com.tw/articles/10252663</a> ",
+        "img":"./assets/redux-flux.png"
       }
     ]
   }

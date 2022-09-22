@@ -20,6 +20,7 @@ const items = [
   getItem("React", "react", <DesktopOutlined />, [
     getItem("UseContext用法", "/gql/use-context", <ContainerOutlined />),
     getItem("UseEffect用法", "/gql/use-effect", <ContainerOutlined />),
+    getItem("Redux用法", "/gql/use-redux", <ContainerOutlined />),
   ]),
 ]
 console.log(items)
